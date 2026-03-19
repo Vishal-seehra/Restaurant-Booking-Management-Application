@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        }
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url("photo-15.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  max-width: 1000px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.info-box img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.info-box h3 {
+  color: #00bcd4;
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: black;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>    
+    <div class="contact-section">
+      <div class="contact-info">
+        <div class="info-box">
+          <img src="location.jpg" alt="Address" />
+          <div>
+            <h3>Address</h3>
+            <p>514 DC Road,<br>HSP,<br>146001</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <img src="call.png" alt="Phone" />
+          <div>
+            <h3>Phone</h3>
+            <p>123-456-7899</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <img src="mail.png" alt="Email" />
+          <div>
+            <h3>Email</h3>
+            <p>salt&pepper@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Message</h2>
+        <form>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Type your Message..." rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

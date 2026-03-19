@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salt&pepper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        }
+        body {
+            font-family: sans-serif;
+            background-image: url("photo-15.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+         nav img {
+            width: 20px;
+            height: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .centered-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .centered-content h1 {
+            font-family: Edwardian script ITC;
+            font-size: 50px;
+            margin: 0;
+            color: #D1A75F;
+        }
+        .centered-content h2 {
+            font-family: bell MT;
+            font-size: 70px;
+            color: white;
+            font-weight: 800;
+            margin: 10px 0;
+        }
+        .centered-content p {
+            margin-top: 10px;
+            letter-spacing: 2px;
+            color: white;
+        }
+        .centered-content button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: white;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .sidebar-icons {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .sidebar-icons div {
+            width: 10px;
+            height: 10px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="home page.html">HOME</a>
+            <a href="reservation.html">RESERVATIONS</a>
+            <a href="#">MENU</a>
+            <a href="#">GALLERY</a>
+            <a href="#">FEATURES</a>
+            <a href="Contact.html">CONTACT</a>
+        </div>
+        <div>
+            <a href="#"><img src="fb.png" alt="FB"></a>
+            <a href="#"><img src="ig.png" alt="IG"></a>
+            <a href="#"><img src="cart.png" alt="Cart"></a>
+        </div>
+    </nav>
+    <div class="centered-content">
+        <h1>Welcome</h1>
+        <h2>Salt & Pepper</h2>
+        <p>LOUNGE AND BAR</p>
+        <button>EXPLORE</button>
+    </div>
+</body>
+</html>
