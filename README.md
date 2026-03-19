@@ -4,9 +4,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
 ![HTML](https://img.shields.io/badge/HTML5-Frontend-red)
 ![CSS](https://img.shields.io/badge/CSS3-Styling-blueviolet)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![Status](https://img.shields.io/badge/Project-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Status](https://img.shields.io/badge/Status-Completed-blue)
 
 A robust, full-stack web application designed to manage restaurant bookings. This project demonstrates a complete data lifecycle: from **User Input (Frontend)** to **Business Logic (Java Backend)** and **Persistent Storage (MySQL)**.
 
