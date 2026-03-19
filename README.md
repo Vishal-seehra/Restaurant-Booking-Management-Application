@@ -1,36 +1,59 @@
-# Restaurant-Booking-Management-Application
-A robust, full-stack web application designed to manage restaurant bookings. This project demonstrates a complete data lifecycle: from User Input (Frontend) to Business Logic (Java Backend) and Persistent Storage (MySQL).
+# 🍽️ Restaurant Booking Management Application
 
-##🚀 Key Features
-Real-time Table Allocation: Automatically assigns the smallest available table that fits the number of guests.
+![Java](https://img.shields.io/badge/Java-Backend-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![HTML](https://img.shields.io/badge/HTML5-Frontend-red)
+![CSS](https://img.shields.io/badge/CSS3-Styling-blueviolet)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-Full-Stack Connectivity: Uses Java's HttpServer to create a custom REST API (CORS enabled).
+A robust, full-stack web application designed to manage restaurant bookings. This project demonstrates a complete data lifecycle: from **User Input (Frontend)** to **Business Logic (Java Backend)** and **Persistent Storage (MySQL)**.
 
-Database Persistence: Full CRUD operations with MySQL for managing reservations and table states.
+---
 
-Responsive UI: Clean, CSS-styled reservation form with real-time user notifications.
+## 🚀 **Key Features**
 
-##🏗️ System Architecture
-The project follows a N-Tier Architecture to ensure separation of concerns:
+* **Real-time Table Allocation:** Automatically assigns the smallest available table that fits the number of guests.
+* **Full-Stack Connectivity:** Uses Java's `HttpServer` to create a custom REST API (CORS enabled).
+* **Database Persistence:** Full CRUD operations with MySQL for managing reservations and table states.
+* **Responsive UI:** Clean, CSS-styled reservation form with real-time user notifications.
 
-Presentation Layer: HTML5, CSS3, and JavaScript (Fetch API).
+---
 
-Logic Layer (API): Java-based handlers for request parsing and reservation processing.
+## 🏗️ **System Architecture**
 
-Data Access Layer: JDBC (Java Database Connectivity) with a DatabaseManager singleton.
+The project follows an **N-Tier Architecture** to ensure separation of concerns:
 
-Storage Layer: MySQL Relational Database.
+* **Presentation Layer:** HTML5, CSS3, JavaScript (Fetch API)
+* **Logic Layer (API):** Java-based handlers for request parsing and reservation processing
+* **Data Access Layer:** JDBC (Java Database Connectivity) with a `DatabaseManager` Singleton
+* **Storage Layer:** MySQL Relational Database
 
-##📊 Database Schema
-The system utilizes two primary tables with a One-to-Many relationship:
+---
 
-tables: Stores physical table data (table_id, size, is_reserved).
+## 📊 **Database Schema**
 
-reservations: Stores customer data with a foreign key linking to the assigned table.
+The system utilizes two primary tables with a **one-to-many relationship**:
 
-```
-📂 Project Structure
-Plaintext
+* **`tables`**
+
+  * `table_id`
+  * `size`
+  * `is_reserved`
+
+* **`reservations`**
+
+  * `reservation_id`
+  * `customer_name`
+  * `guests`
+  * `table_id` *(Foreign Key)*
+
+---
+
+## 📂 **Project Structure**
+
+```plaintext id="1i0i6u"
 ├── lib/               # JDBC Driver (MySQL Connector)
 ├── models/            # Data Objects (POJOs)
 ├── services/          # Business Logic & API Handlers
@@ -38,3 +61,24 @@ Plaintext
 ├── reservation.html   # Frontend Reservation Form
 └── Main.java          # Application Entry Point
 ```
+
+---
+
+## ▶️ **How to Run**
+
+1. Clone the repository
+2. Import into your Java IDE
+3. Set up MySQL using `sql-DB.sql`
+4. Run `Main.java`
+5. Open `reservation.html` in browser
+
+---
+
+## 📌 **Future Improvements**
+
+* Add user authentication & login system
+* Improve UI/UX with modern frameworks
+* Deploy backend on cloud (AWS / Render)
+* Add admin dashboard for table management
+
+---
