@@ -122,10 +122,8 @@ function showNotification(message, success = true) {
 document.getElementById("reservationForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // 1. Use URLSearchParams to gather data automatically from the form
     const formData = new URLSearchParams(new FormData(this));
 
-    // 2. Send the request
     fetch("http://localhost:8080/reserve", {
         method: "POST",
         headers: {
