@@ -10,7 +10,6 @@ public class DatabaseManager {
     private static final String USER = "admin";
     private static final String PASSWORD = "Seehra04";
 
-    // Method to get DB connection
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
