@@ -9,21 +9,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class ReservationManager {
-    private Connection conn;
-
-public ReservationManager() {
-    try {
-        conn = DriverManager.getConnection(
-            "jdbc:mysql://restaurant-db.cl80c82c8jen.eu-north-1.rds.amazonaws.com:3306/restaurant_db",
-            "admin",
-            "Seehra04"
-        );
-        System.out.println("Connected to RDS!");
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
-
+    
     private List<Reservation> reservations;
     private Queue<Reservation> walkInQueue;
     private TableManager tableManager;
