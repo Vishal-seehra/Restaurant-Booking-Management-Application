@@ -44,8 +44,8 @@ public class ReservationManager {
             insertStmt.setString(2, lastName);
             insertStmt.setString(3, contact);
             insertStmt.setString(4, email);
-            insertStmt.setString(5, java.sql.Date.valueOf(date));
-            insertStmt.setString(6, java.sql.Time.valueOf(time));
+            insertStmt.setDate(5, java.sql.Date.valueOf(date));
+            insertStmt.setTime(6, java.sql.Time.valueOf(time));
             insertStmt.setInt(7, guests);
             insertStmt.setInt(8, table.getTableId());
             insertStmt.setString(9, notes);
