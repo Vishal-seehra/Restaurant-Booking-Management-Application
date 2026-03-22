@@ -6,9 +6,10 @@ import java.sql.SQLException;
 
 public class DatabaseManager {
 
-    private static final String URL = "jdbc:mysql://restaurant-db.cl80c82c8jen.eu-north-1.rds.amazonaws.com:3306/restaurant_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
-    private static final String USER = "admin";
-    private static final String PASSWORD = "Seehra04";
+    private static final String URL = System.getenv("DB_URL");
+    private static final String USER = System.getenv("DB_USER");
+    private static final String PASSWORD = System.getenv("DB_PASSWORD");
+
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
